@@ -30,6 +30,6 @@ process moderate_orfannotate_filter {
     
     results_name=`echo "\${novel_folder_name}" | sed -E 's/_novel//g'`
 
-    Rscript ${projectDir}/Rscripts/moderate_filter_orfannotate_output.R \${novel_folder}/ORFannotate_summary.tsv \${annotated_folder}/ORFannotate_summary.tsv \${novel_folder}/protein.fa \${annotated_folder}/protein.fa \$results_name
+    Rscript ${projectDir}/R_scripts/moderate_filter_orfannotate_output.R \${novel_folder}/ORFannotate_summary.tsv \${annotated_folder}/ORFannotate_summary.tsv \${novel_folder}/protein.fa \${annotated_folder}/protein.fa \$results_name
     """
 }

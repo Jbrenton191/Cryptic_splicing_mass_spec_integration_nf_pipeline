@@ -13,6 +13,6 @@ process junction_chunk_split {
 
   script:
     """
-    Rscript ${projectDir}/Rscripts/Junction_chunk_split.R $junction_list
+    Rscript ${projectDir}/R_scripts/Junction_chunk_split.R $junction_list
     """
 }

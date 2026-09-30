@@ -13,6 +13,6 @@ process annotate_junctions {
     
   script:
     """
-    Rscript ${projectDir}/Rscripts/Junction_annotation.R $gtf_path $junction_list_path
+    Rscript ${projectDir}/R_scripts/Junction_annotation.R $gtf_path $junction_list_path
     """
 }

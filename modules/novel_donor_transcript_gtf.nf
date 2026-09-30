@@ -13,6 +13,6 @@ process novel_donor_transcript_gtf {
   
   script:
     """
-    Rscript ${projectDir}/Rscripts/novel_donor_transcript_gtf.R $gtf_path $fasta_path $junction_list
+    Rscript ${projectDir}/R_scripts/novel_donor_transcript_gtf.R $gtf_path $fasta_path $junction_list
     """
 }
