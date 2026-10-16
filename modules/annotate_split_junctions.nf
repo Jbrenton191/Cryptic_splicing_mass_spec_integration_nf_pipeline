@@ -1,5 +1,7 @@
 process annotate_junctions {
   
+  conda 'dasper_env'
+  
   publishDir "${projectDir}/output/junction_annotation", mode: 'copy', overwrite: true
   
   input:

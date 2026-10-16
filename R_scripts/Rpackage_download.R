@@ -10,15 +10,10 @@ if (!require(readr)) install.packages('readr', repos='https://www.stats.bris.ac.
 
 if (!require(purrr)) install.packages('purrr', repos='https://www.stats.bris.ac.uk/R/')
 
+if (!require(readxl)) install.packages('readxl', repos='https://www.stats.bris.ac.uk/R/')
 
 if (!requireNamespace("Biostrings", quietly = TRUE)) BiocManager::install("Biostrings")
 
 if (!requireNamespace("rtracklayer", quietly = TRUE)) BiocManager::install("rtracklayer")
 
 if (!requireNamespace("GenomicRanges", quietly = TRUE)) BiocManager::install("GenomicRanges")
-
-if (!requireNamespace("GenomicFeatures", quietly = TRUE)) BiocManager::install("GenomicFeatures")
-
-if (!requireNamespace("GenomeInfoDb", quietly = TRUE)) BiocManager::install("GenomeInfoDb")
-
-if (!requireNamespace("dasper", quietly = TRUE)) BiocManager::install("dasper")
